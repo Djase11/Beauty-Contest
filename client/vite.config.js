@@ -1,13 +1,13 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import path from 'path'
 
 export default defineConfig({
   plugins: [react()],
+  root: '.',
   build: {
-    outDir: path.resolve(__dirname, '../client/dist'),
-    emptyOutDir: true,
+    outDir: 'dist',
     rollupOptions: {
+      input: './index.html',
       onwarn(warning, warn) {
         if (warning.code === 'MODULE_LEVEL_DIRECTIVE') return;
         warn(warning);

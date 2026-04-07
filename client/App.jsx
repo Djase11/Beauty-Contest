@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { io } from 'socket.io-client';
-import Home from './screens/Home.jsx';
-import Lobby from './screens/Lobby.jsx';
-import Game from './screens/Game.jsx';
-import Results from './screens/Results.jsx';
-import FinalLeaderboard from './screens/FinalLeaderboard.jsx';
+import Home from './Home.jsx';
+import Lobby from './Lobby.jsx';
+import Game from './Game.jsx';
+import Results from './Results.jsx';
+import FinalLeaderboard from './FinalLeaderboard.jsx';
 
 const SOCKET_URL = window.location.origin;
 
